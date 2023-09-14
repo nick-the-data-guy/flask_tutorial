@@ -1,0 +1,38 @@
+1. create folder on local computer (ie. C:\Users\losti\Documents\python_playground\flask_tutorial)
+
+2. launch VS Code
+
+3. create virtual environment:
+    $ py -m venv .venv
+
+4. activate virtual environment
+    $ source .venv/Scripts/activate
+
+5. create file
+    .gitignore
+
+6. add these items to .gitignore
+    .venv
+    .git
+
+7. execute this code in the bash prompt
+
+echo "# flask_tutorial" >> README.md
+git init
+git config user.name "Nick White"
+git config user.email "lostipod12@gmail.com"
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nick-the-data-guy/flask_tutorial.git
+git push -u origin main
+
+8. upgrade pip
+	py -m pip install --upgrade pip
+
+9. install Flask
+	pip install flask
+	
+10. install waitress
+	pip install waitress
+	
