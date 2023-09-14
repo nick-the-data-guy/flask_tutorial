@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for
-from waitress import serve 
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def user(name):
 
 @app.route("/admin")
 def admin():
-    return redirect(url_for("home"))
+    return redirect(url_for("user", name="Admin!"))
 
 
 
