@@ -15,7 +15,7 @@ def user(name):
     return f"Hello {name}!"
 
 
-@app.route("/admin")
+@app.route("/admin/")
 def admin():
     return redirect(url_for("user", name="Admin!"))
 
