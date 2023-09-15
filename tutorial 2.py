@@ -1,20 +1,11 @@
 from flask import Flask, redirect, url_for, render_template
 from waitress import serve
 
-
-
 app = Flask(__name__)
 
-
-
-@app.route("/")
-def home():
-    return render_template("index.html")
-
-
-
-
-
+@app.route("/<name>")
+def home(name):
+    return render_template("index.html", content = ["tim", "joe", "bill"])
 
 
 if __name__=="__main__":
